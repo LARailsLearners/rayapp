@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"A",
+				"ActionMailer"
+			],
+			[
 				"action_",
 				"action_mailer"
 			],
@@ -36,34 +40,13 @@
 	"buffers":
 	[
 		{
-			"file": "config/routes.rb",
-			"settings":
-			{
-				"buffer_size": 134,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Gemfile",
-			"settings":
-			{
-				"buffer_size": 1550,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "config/environments/development.rb",
-			"settings":
-			{
-				"buffer_size": 1766,
-				"line_ending": "Unix"
-			}
-		},
-		{
+			"contents": "<!DOCTYPE html>\n<html>\n<head>\n  <title>Rayapp</title>\n  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>\n  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>\n  <%= csrf_meta_tags %>\n</head>\n<body>\n	<div class=\"container\">\n    <ul class=\"nav nav-tabs\">\n      <li><%= link_to \"RayApp\", root_path %></li>\n      <li><%= link_to \"About\", welcome_about_path %></li>\n      <div class=\"pull-right user-info\">\n           <% if current_user %>\n           Hello <%= current_user.email %>! <%= link_to \"Sign out\", destroy_user_session_path, method: :delete %>\n           <%else%>\n           <%= link_to \"Sign In\", new_user_session_path %> or <%= link_to \"Sign Up\", new_user_registration_path %>\n           <%end%>\n       </div>\n   </ul>\n<% if flash[:notice] %>\n         <div class=\"alert alert-success\">\n           <div id='notice'>\n           <button type=\"button\" class=\"close\" data-dismiss=\"alert\">&times;</button>\n           <%= flash[:notice] %>\n         </div>\n      </div>\n       <% elsif flash[:error] %>\n         <div class=\"alert alert-danger\">\n           <button type=\"button\" class=\"close\" data-dismiss=\"alert\">&times;</button>\n           <%= flash[:error] %>\n         </div>\n       <% elsif flash[:alert] %>\n         <div class=\"alert alert-warning\">\n           <button type=\"button\" class=\"close\" data-dismiss=\"alert\">&times;</button>\n           <%= flash[:alert] %>\n         </div>\n       <% end %>\n<%= yield %>\n\n</body>\n</html>\n",
 			"file": "app/views/layouts/application.html.erb",
+			"file_size": 1500,
+			"file_write_time": 1433314549000000,
 			"settings":
 			{
-				"buffer_size": 1496,
+				"buffer_size": 1500,
 				"line_ending": "Unix"
 			}
 		},
@@ -76,34 +59,18 @@
 			}
 		},
 		{
-			"file": "app/views/devise/registrations/new.html.erb",
-			"settings":
-			{
-				"buffer_size": 1287,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/devise/registrations/edit.html.erb",
-			"settings":
-			{
-				"buffer_size": 1820,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/devise/sessions/new.html.erb",
-			"settings":
-			{
-				"buffer_size": 728,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "app/assets/stylesheets/application.scss",
 			"settings":
 			{
-				"buffer_size": 115,
+				"buffer_size": 142,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/javascripts/application.js",
+			"settings":
+			{
+				"buffer_size": 681,
 				"line_ending": "Unix"
 			}
 		}
@@ -136,10 +103,20 @@
 	},
 	"file_history":
 	[
-		"/Users/raysango/Documents/rayapp/app/views/devise/sessions/new.html.erb",
-		"/Users/raysango/Documents/rayapp/app/assets/stylesheets/application.scss",
-		"/Users/raysango/Documents/rayapp/app/views/devise/registrations/edit.html.erb",
+		"/Users/raysango/Documents/rayapp/config/routes.rb",
+		"/Users/raysango/Documents/rayapp/Gemfile",
+		"/Users/raysango/Documents/rayapp/config/environments/development.rb",
+		"/Users/raysango/Documents/rayapp/app/views/layouts/application.html.erb",
+		"/Users/raysango/Documents/rayapp/app/views/welcome/index.html.erb",
 		"/Users/raysango/Documents/rayapp/app/views/devise/registrations/new.html.erb",
+		"/Users/raysango/Documents/rayapp/app/views/devise/registrations/edit.html.erb",
+		"/Users/raysango/Documents/rayapp/config/environments/production.rb",
+		"/Users/raysango/Documents/rayapp/config/application.yml",
+		"/Users/raysango/Documents/rayapp/config/initializers/setup_mail.rb",
+		"/Users/raysango/Documents/rayapp/.gitignore",
+		"/Users/raysango/Documents/rayapp/app/assets/stylesheets/application.scss",
+		"/Users/raysango/Documents/rayapp/config/application.example.yml",
+		"/Users/raysango/Documents/rayapp/app/views/devise/sessions/new.html.erb",
 		"/Users/raysango/Documents/rayapp/app/controllers/application_controller.rb",
 		"/Users/raysango/Documents/rayapp/app/models/user.rb",
 		"/Users/raysango/Documents/rayapp/db/migrate/20150530041654_devise_create_users.rb",
@@ -246,105 +223,22 @@
 	"groups":
 	[
 		{
-			"selected": 8,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "config/routes.rb",
-					"settings":
-					{
-						"buffer_size": 134,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								105,
-								105
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Gemfile",
-					"settings":
-					{
-						"buffer_size": 1550,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								575,
-								575
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "config/environments/development.rb",
-					"settings":
-					{
-						"buffer_size": 1766,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1761,
-								1761
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "app/views/layouts/application.html.erb",
 					"settings":
 					{
-						"buffer_size": 1496,
+						"buffer_size": 1500,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								349,
-								349
+								369,
+								369
 							]
 						],
 						"settings":
@@ -360,7 +254,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 1,
 					"file": "app/views/welcome/index.html.erb",
 					"settings":
 					{
@@ -371,8 +265,8 @@
 						"selection":
 						[
 							[
-								21,
-								21
+								27,
+								27
 							]
 						],
 						"settings":
@@ -386,108 +280,50 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "app/views/devise/registrations/new.html.erb",
-					"settings":
-					{
-						"buffer_size": 1287,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1129,
-								1129
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/views/devise/registrations/edit.html.erb",
-					"settings":
-					{
-						"buffer_size": 1820,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1501,
-								1501
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 37.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "app/views/devise/sessions/new.html.erb",
-					"settings":
-					{
-						"buffer_size": 728,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								404,
-								404
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
+					"buffer": 2,
 					"file": "app/assets/stylesheets/application.scss",
 					"settings":
 					{
-						"buffer_size": 115,
+						"buffer_size": 142,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								51,
-								51
+								104,
+								104
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage"
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/assets/javascripts/application.js",
+					"settings":
+					{
+						"buffer_size": 681,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								680,
+								680
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
