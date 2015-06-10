@@ -11,6 +11,9 @@
     <ul class="nav nav-tabs">
       <li><%= link_to "RayApp", root_path %></li>
       <li><%= link_to "About", welcome_about_path %></li>
+      <% if current_user %>
+      <li><%= link_to "Inventory", products_path %></li> 
+      <%end%>
       <div class="pull-right user-info">
            <% if current_user %>
            Hello <%= link_to (current_user.email), edit_user_registration_path %>! <%= link_to "Sign out", destroy_user_session_path, method: :delete %>

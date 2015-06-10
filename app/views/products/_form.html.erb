@@ -1,0 +1,32 @@
+<%= form_for @product do |f| %>
+<% if product.errors.any? %>
+    <div class="alert alert-danger">
+    	
+      <h4>There are <%= pluralize(product.errors.count, "error") %>.</h4>
+      <ul>
+        <% product.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+	<%= form_group_tag(@product.errors[:name]) do %>
+		<%= f.label :Name %>
+		<%= f.text_field :name, class: 'form-control', placeholder: "Enter Product Name", autofocus: true %>
+	<%end%>
+
+	<%= form_group_tag(@product.errors[:description]) do %>
+		<%= f.label :Description %>
+		<%= f.text_area :description, class: 'form-control', placeholder: "Enter Product Description"%>
+	<%end%>
+
+	<%= form_group_tag(@product.errors[:price]) do %>
+		<%= f.label :Price %>
+		<%= f.number_field :price, class: 'form-control', placeholder: "Enter Product Price", autofocus: true %>
+	<%end%>
+
+	<div class="form-group">
+        <%= f.submit "Save", class: 'btn btn-success' %>
+    </div>
+
+<%end%>
