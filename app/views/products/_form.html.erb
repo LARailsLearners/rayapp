@@ -20,6 +20,21 @@
 		<%= f.text_area :description, class: 'form-control', placeholder: "Enter Product Description"%>
 	<%end%>
 
+	<%= form_group_tag(@product.errors[:condition]) do %>
+		<%= f.label :Condition %>
+		<%= f.select :condition, [['New','new'],['Used','used']],class: 'form-control' %>
+	<%end%>
+
+	<%= form_group_tag(@product.errors[:quantity]) do %>
+		<%= f.label :Quantity %>
+		<%= f.number_field :quantity, class: 'form-control', placeholder: "Enter Product Quantity"%>
+	<%end%>
+
+	<%= form_group_tag(@product.errors[:upc_code]) do %>
+		<%= f.label :UPC %>
+		<%= f.text_area :upc_code, class: 'form-control', placeholder: "Enter Product UPC Code"%>
+	<%end%>
+
 	<%= form_group_tag(@product.errors[:price]) do %>
 		<%= f.label :Price %>
 		<%= f.number_field :price, class: 'form-control', placeholder: "Enter Product Price", autofocus: true %>

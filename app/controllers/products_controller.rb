@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
 before_action :authenticate_user!
+respond_to :html, :js
 
   def index
   	@products = current_user.products
@@ -19,6 +20,9 @@ before_action :authenticate_user!
     @product.name = @product_copy.name
     @product.description = @product_copy.description
     @product.price = @product_copy.price
+    @product.quantity = @product_copy.quantity
+    @product.upc_code = @product_copy.upc_code
+    @product.condition = @product_copy.condition
   end
 
   def create
@@ -49,20 +53,20 @@ before_action :authenticate_user!
   end
 
   def destroy
-  	@product = Product.find(params[:id])
-  	name = @product.name
-  	if @product.destroy
-  		flash[:notice]= "\"#{name}\" was deleted successfully"
-  		redirect_to products_path
-  	else
-  		flash[:error] = "There was an error please try again"
-  		redirect_to products_path
-  	end
+    @product = Product.find(params[:id])
+    name = @product.name
+    if @product.destroy
+      flash[:notice]= "\"#{name}\" was deleted successfully"
+      redirect_to products_path
+    else
+      flash[:error] = "There was an error please try again"
+      redirect_to products_path
+    end
   end
 
   private
 
   def product_params
-  	params.require(:product).permit(:name, :description, :price, :user_id)
+  	params.require(:product).permit(:name, :description, :price, :user_id,:condition, :quantity, :upc_code)
   end
 end

@@ -1,0 +1,25 @@
+            <tr>
+        			<td> <%= @count += 1 %></td>
+        			<td> <%= product.name %> </td>
+        			<td> <%= product.description %> </td>
+              <td> <%= product.condition %> </td>
+              <td> <%= product.quantity %> </td>
+              <td> <%= product.upc_code %> </td>
+        			<td> <%= product.price %> </td>
+        			<td>
+      				  <div class="dropdown">
+                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true"> Actions
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <% if current_user.admin %>
+                    <li role="presentation"><%= link_to "Delete", product, method: :delete %></li>
+                    <!-- <a role="menuitem" tabindex="-1" href="/products/<%= product.id %>" rel="nofollow" data-method="delete" data-confirm="Are you sure?" remote: true>Delete</a> -->
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/products/<%= product.id %>/edit">Edit</a></li>
+                    <%end%>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/products/<%= product.id %>/copy">Copy</a></li>
+                  </ul>
+                </div>
+    				
+				      </td>
+             </tr> 
