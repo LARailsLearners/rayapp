@@ -23,6 +23,7 @@ respond_to :html, :js
     @product.quantity = @product_copy.quantity
     @product.upc_code = @product_copy.upc_code
     @product.condition = @product_copy.condition
+    @product.image = @product_copy.image
   end
 
   def create
@@ -67,6 +68,6 @@ respond_to :html, :js
   private
 
   def product_params
-  	params.require(:product).permit(:name, :description, :price, :user_id,:condition, :quantity, :upc_code)
+  	params.require(:product).permit(:name, :description, :price, :user_id,:condition, :quantity, :upc_code, :image)
   end
 end

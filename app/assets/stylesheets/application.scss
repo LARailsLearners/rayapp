@@ -3,7 +3,20 @@
 
 .nav {
   margin-top: 5px;
+  background-color: black;
 }
+
+.nav li {
+	margin-top: 50px;
+}
+.nav li a:hover {
+  background-color: #A8A8A8;
+}
+
+.nav {
+	background-color: transparent;
+}
+
 
 .user-info {
   margin-top: 9px;

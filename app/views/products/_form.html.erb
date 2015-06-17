@@ -20,6 +20,19 @@
 		<%= f.text_area :description, class: 'form-control', placeholder: "Enter Product Description"%>
 	<%end%>
 
+	<% if @product.image? %>
+        <div class="form-group" >
+          <p>Current Image</p>
+          <%= image_tag(@product.image.profile.url)%>
+        </div>
+      <%end%>
+
+      <%= form_group_tag(@product.errors[:image]) do %>
+        <%= f.label :Upload_Image %>
+        <%= f.file_field :image %>
+        <%= f.hidden_field :image_cache %>
+      <%end%>
+
 	<%= form_group_tag(@product.errors[:condition]) do %>
 		<%= f.label :Condition %>
 		<%= f.select :condition, [['New','new'],['Used','used']],class: 'form-control' %>

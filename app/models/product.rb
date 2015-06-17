@@ -7,4 +7,5 @@ class Product < ActiveRecord::Base
   validates :quantity, :numericality => { :greater_than_or_equal_to => 1 }, presence: true
   validates :upc_code, length: {minimum: 9}, presence: true
   validates :upc_code, length: {maximum: 9}
+  mount_uploader :image, ImageUploader
 end
