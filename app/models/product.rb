@@ -8,4 +8,10 @@ class Product < ActiveRecord::Base
   validates :upc_code, length: {minimum: 9}, presence: true
   validates :upc_code, length: {maximum: 9}
   mount_uploader :image, ImageUploader
+
+  # It returns the products whose names contain one or more words form the query
+  def self.search(query)
+    # where(:title, query) -> This would return an exact match of the query
+    Product.where("LOWER(name) like ?", "%#{query}%") 
+  end
 end

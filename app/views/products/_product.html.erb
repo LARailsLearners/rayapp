@@ -13,7 +13,7 @@
                     <span class="caret"></span>
                   </button>
                   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                    <% if current_user.admin %>
+                    <% if current_user.admin || current_user.id == product.user_id %>
                     <li role="presentation"><%= link_to "Delete", product, method: :delete %></li>
                     <!-- <a role="menuitem" tabindex="-1" href="/products/<%= product.id %>" rel="nofollow" data-method="delete" data-confirm="Are you sure?" remote: true>Delete</a> -->
                     <li role="presentation"><a role="menuitem" tabindex="-1" href="/products/<%= product.id %>/edit">Edit</a></li>

@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag 'animate.min'%>
 </head>
 <body>
 	<div class="container">
@@ -13,24 +14,33 @@
       <li><%= link_to "About", welcome_about_path %></li>
       <% if current_user %>
       <li><%= link_to "Inventory", products_path %></li> 
+      <li><%= link_to "All Products", products_all_path %></li>
+      <li><%= form_tag(products_all_path, :method => "get", class: "navbar-form", id: "search-form") do %>
+    
+      <%= text_field_tag :search, params[:search], class: "span2", placeholder: "Search Products" %>
+      <!-- In order to have the "search" icon int the button, we need to use plain HTML instead 
+           of using a Rails form helper -->
+      <button class="bt btn-success"  type="submit">search</button></li>
+    
+    <%end%>
       <%end%>
       <div class="pull-right user-info" style="
     margin-right: 10px">
+    
            <% if current_user %>
-           <%= image_tag(current_user.avatar.tiny.url) if current_user.avatar? %>
+           
+           <%= image_tag(current_user.avatar.tiny.url, :class => "img-circle")  if current_user.avatar? %>
            Hello <%= link_to (current_user.email), edit_user_registration_path %>! <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
            <%else%>
            <%= link_to "Sign In", new_user_session_path %> or <%= link_to "Sign Up", new_user_registration_path %>
            <%end%>
        </div>
    </ul>
-<% if flash[:notice] %>
+   <% if flash[:notice] %>
          <div class="alert alert-success">
-           <div id='notice'>
            <button type="button" class="close" data-dismiss="alert">&times;</button>
            <%= flash[:notice] %>
          </div>
-      </div>
        <% elsif flash[:error] %>
          <div class="alert alert-danger">
            <button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -43,6 +53,7 @@
          </div>
        <% end %>
 <%= yield %>
-
+</div>
 </body>
 </html>
+

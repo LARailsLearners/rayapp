@@ -7,6 +7,17 @@ respond_to :html, :js
   	@count= 0
   end
 
+  def index_all
+    @products_all = Product.all
+    @count= 0 
+    if params[:search]
+      @products_all = Product.search(params[:search]).order("created_at DESC")
+    else
+      @products_all = Product.order("created_at DESC")
+    end
+  end
+
+
   def show
   end
 

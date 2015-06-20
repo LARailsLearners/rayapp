@@ -5,10 +5,12 @@ Rails.application.routes.draw do
 	resources :users, only: [:update, :show, :index]
 
 	resources :products do
+
 		member do
 			get'copy'
 		end	
 	end	
+	get'/products-all' => 'products#index_all'
 
  	get 'welcome/about'
 	root to: 'welcome#index'
