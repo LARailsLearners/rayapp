@@ -330,7 +330,6 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
 				{
@@ -371,8 +370,8 @@
 						"selection":
 						[
 							[
-								2303,
-								2303
+								1277,
+								1277
 							]
 						],
 						"settings":
@@ -382,7 +381,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 193.0,
+						"translation.y": 58.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
