@@ -10,7 +10,7 @@
  </div>
 </div>
  <%else%>
- <div class= "add">
+ <div class= "add ">
  <h1 style="display: none; text-align: center">Welcome to RayApp</h1>
  <div class="sign" style="display: none">
  	<%= link_to "Sign In", new_user_session_path, class:"btn btn-default btn-lg btn-block" %>
@@ -22,10 +22,9 @@
 <%end%>
 <script>
 	$(document).ready( function() {
-	  	$("h1").show(700, function() {
+	  		$("h1").show().addClass("bounceInDown animated");
 	  		$(".sign").show(900, function(){
 	  			$(".test").show(1100);
-	  		});
 	  	});
 	});
  </script>
