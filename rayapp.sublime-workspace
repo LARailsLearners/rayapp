@@ -87,78 +87,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "app/views/welcome/index.html.erb",
-			"settings":
-			{
-				"buffer_size": 991,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/layouts/application.html.erb",
-			"settings":
-			{
-				"buffer_size": 2359,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/assets/stylesheets/animate.min.css",
-			"settings":
-			{
-				"buffer_size": 71088,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/controllers/products_controller.rb",
-			"settings":
-			{
-				"buffer_size": 1943,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "config/initializers/assets.rb",
-			"settings":
-			{
-				"buffer_size": 554,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/products/index.html.erb",
-			"settings":
-			{
-				"buffer_size": 440,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/products/_product.html.erb",
-			"settings":
-			{
-				"buffer_size": 1588,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Gemfile",
-			"settings":
-			{
-				"buffer_size": 1689,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/controllers/application_controller.rb",
-			"settings":
-			{
-				"buffer_size": 572,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -188,33 +116,38 @@
 	},
 	"file_history":
 	[
-		"/Users/raysango/Documents/rayapp/config/initializers/setup_mail.rb",
+		"/Users/raysango/Documents/rayapp/app/views/welcome/index.html.erb",
+		"/Users/raysango/Documents/rayapp/app/views/layouts/application.html.erb",
+		"/Users/raysango/Documents/rayapp/app/controllers/products_controller.rb",
 		"/Users/raysango/Documents/rayapp/app/models/product.rb",
+		"/Users/raysango/Documents/rayapp/app/controllers/application_controller.rb",
+		"/Users/raysango/Documents/rayapp/app/policies/application_policy.rb",
+		"/Users/raysango/Documents/rayapp/app/policies/product_policy.rb",
+		"/Users/raysango/Documents/rayapp/app/views/products/_product.html.erb",
+		"/Users/raysango/Documents/rayapp/app/views/products/index.html.erb",
+		"/Users/raysango/Documents/rayapp/app/views/products/index_all.html.erb",
+		"/Users/raysango/Documents/rayapp/app/views/welcome/about.html.erb",
+		"/Users/raysango/Documents/rayapp/app/views/devise/registrations/edit.html.erb",
+		"/Users/raysango/Documents/rayapp/app/views/devise/registrations/new.html.erb",
+		"/Users/raysango/Documents/rayapp/app/controllers/users_controller.rb",
+		"/Users/raysango/Documents/rayapp/app/models/user.rb",
+		"/Users/raysango/Documents/rayapp/app/assets/stylesheets/animate.min.css",
+		"/Users/raysango/Documents/rayapp/config/initializers/assets.rb",
+		"/Users/raysango/Documents/rayapp/Gemfile",
+		"/Users/raysango/Documents/rayapp/config/initializers/setup_mail.rb",
 		"/Users/raysango/Documents/rayapp/app/uploaders/image_uploader.rb",
 		"/Users/raysango/Documents/rayapp/app/assets/stylesheets/application.scss",
-		"/Users/raysango/Documents/rayapp/app/views/layouts/application.html.erb",
 		"/Users/raysango/Documents/rayapp/app/assets/stylesheets/welcome.scss",
-		"/Users/raysango/Documents/rayapp/app/views/welcome/index.html.erb",
 		"/Users/raysango/Documents/rayapp/app/assets/javascripts/test.js",
 		"/Users/raysango/Documents/rayapp/app/assets/javascripts/application.js",
 		"/Users/raysango/Documents/rayapp/config/application.rb",
-		"/Users/raysango/Documents/rayapp/app/controllers/products_controller.rb",
-		"/Users/raysango/Documents/rayapp/app/views/products/index_all.html.erb",
 		"/Users/raysango/Documents/rayapp/app/views/products/_form.html.erb",
-		"/Users/raysango/Documents/rayapp/app/views/products/_product.html.erb",
-		"/Users/raysango/Documents/rayapp/app/views/products/index.html.erb",
-		"/Users/raysango/Documents/rayapp/app/controllers/application_controller.rb",
-		"/Users/raysango/Documents/rayapp/app/views/devise/registrations/edit.html.erb",
 		"/Users/raysango/Documents/rayapp/config/routes.rb",
 		"/Users/raysango/Samsung/Ebay/20150616_185159.jpg",
 		"/Users/raysango/Documents/rayapp/config/initializers/fog.rb",
-		"/Users/raysango/Documents/rayapp/app/views/devise/registrations/new.html.erb",
-		"/Users/raysango/Documents/rayapp/app/controllers/users_controller.rb",
-		"/Users/raysango/Documents/rayapp/Gemfile",
 		"/Users/raysango/Documents/rayapp/app/uploaders/avatar_uploader.rb",
 		"/Users/raysango/Documents/rayapp/config/initializers/carrierwave.rb",
 		"/Users/raysango/Documents/rayapp/config/application.yml",
-		"/Users/raysango/Documents/rayapp/app/models/user.rb",
 		"/Users/raysango/Documents/rayapp/config/application.example.yml",
 		"/Users/raysango/Documents/rayapp/app/views/products/destroy.js.erb",
 		"/Users/raysango/Documents/rayapp/db/migrate/20150611041552_remove_admin_from_users.rb",
@@ -348,250 +281,6 @@
 		{
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "app/views/welcome/index.html.erb",
-					"settings":
-					{
-						"buffer_size": 991,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								802,
-								989
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/views/layouts/application.html.erb",
-					"settings":
-					{
-						"buffer_size": 2359,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1277,
-								1277
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 58.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/assets/stylesheets/animate.min.css",
-					"settings":
-					{
-						"buffer_size": 71088,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								71088,
-								71088
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/controllers/products_controller.rb",
-					"settings":
-					{
-						"buffer_size": 1943,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								82,
-								82
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "config/initializers/assets.rb",
-					"settings":
-					{
-						"buffer_size": 554,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								253,
-								253
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/views/products/index.html.erb",
-					"settings":
-					{
-						"buffer_size": 440,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5,
-								5
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/views/products/_product.html.erb",
-					"settings":
-					{
-						"buffer_size": 1588,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1020,
-								1020
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "Gemfile",
-					"settings":
-					{
-						"buffer_size": 1689,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								565,
-								565
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "app/controllers/application_controller.rb",
-					"settings":
-					{
-						"buffer_size": 572,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								176,
-								176
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
