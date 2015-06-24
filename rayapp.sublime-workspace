@@ -139,7 +139,23 @@
 			"file": "app/views/products/_product.html.erb",
 			"settings":
 			{
-				"buffer_size": 1522,
+				"buffer_size": 1588,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Gemfile",
+			"settings":
+			{
+				"buffer_size": 1689,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/application_controller.rb",
+			"settings":
+			{
+				"buffer_size": 572,
 				"line_ending": "Unix"
 			}
 		}
@@ -172,6 +188,7 @@
 	},
 	"file_history":
 	[
+		"/Users/raysango/Documents/rayapp/config/initializers/setup_mail.rb",
 		"/Users/raysango/Documents/rayapp/app/models/product.rb",
 		"/Users/raysango/Documents/rayapp/app/uploaders/image_uploader.rb",
 		"/Users/raysango/Documents/rayapp/app/assets/stylesheets/application.scss",
@@ -207,7 +224,6 @@
 		"/Users/raysango/Documents/rayapp/app/views/products/copy.html.erb",
 		"/Users/raysango/Documents/rayapp/config/environments/development.rb",
 		"/Users/raysango/Documents/rayapp/config/environments/production.rb",
-		"/Users/raysango/Documents/rayapp/config/initializers/setup_mail.rb",
 		"/Users/raysango/Documents/rayapp/.gitignore",
 		"/Users/raysango/Documents/rayapp/app/views/devise/sessions/new.html.erb",
 		"/Users/raysango/Documents/rayapp/db/migrate/20150530041654_devise_create_users.rb",
@@ -501,15 +517,15 @@
 					"file": "app/views/products/_product.html.erb",
 					"settings":
 					{
-						"buffer_size": 1522,
+						"buffer_size": 1588,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								946,
-								946
+								1020,
+								1020
 							]
 						],
 						"settings":
@@ -517,6 +533,58 @@
 							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "Gemfile",
+					"settings":
+					{
+						"buffer_size": 1689,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								565,
+								565
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/controllers/application_controller.rb",
+					"settings":
+					{
+						"buffer_size": 572,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								176,
+								176
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -587,6 +655,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 224.0,
+	"side_bar_width": 365.0,
 	"status_bar_visible": true
 }
