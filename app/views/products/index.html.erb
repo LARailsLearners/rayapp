@@ -1,5 +1,5 @@
 
-	<h1>Manage Inventory <%= link_to "Add Item", new_product_path, class: 'btn btn-success'%></h1>
+	<h1>Manage Inventory <% if policy(Product.new).create? %> <%= link_to "Add Item", new_product_path, class: 'btn btn-success'%><%end%></h1>
 <br>
     <table class="table table-hover">
       <tr>

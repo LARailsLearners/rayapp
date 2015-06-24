@@ -6,8 +6,12 @@ class ApplicationPolicy
     @record = record
   end
 
+  def index_all?
+    true
+  end
+
   def index?
-    false
+    user.present?
   end
 
   def show?
@@ -15,15 +19,19 @@ class ApplicationPolicy
   end
 
   def create?
-    false
+    user.present?
   end
 
   def new?
     create?
   end
 
+  def copy?
+    create?
+  end
+
   def update?
-    false
+    user.present? && (record.user == user || user.admin?)
   end
 
   def edit?
@@ -31,11 +39,11 @@ class ApplicationPolicy
   end
 
   def destroy?
-    false
+    update?
   end
 
   def scope
-    Pundit.policy_scope!(user, record.class)
+    record.class
   end
 
   class Scope
