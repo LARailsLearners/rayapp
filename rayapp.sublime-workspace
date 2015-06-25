@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"pro",
+				"products"
+			],
+			[
 				"add",
 				"addClass"
 			],
@@ -14,10 +18,6 @@
 			[
 				"product",
 				"product_copy"
-			],
-			[
-				"pro",
-				"product"
 			],
 			[
 				"pr",
@@ -87,6 +87,30 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "app/controllers/products_controller.rb",
+			"settings":
+			{
+				"buffer_size": 2023,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/uploaders/image_uploader.rb",
+			"settings":
+			{
+				"buffer_size": 1864,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": ".gitignore",
+			"settings":
+			{
+				"buffer_size": 520,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -116,24 +140,26 @@
 	},
 	"file_history":
 	[
-		"/Users/raysango/Documents/rayapp/app/views/welcome/index.html.erb",
-		"/Users/raysango/Documents/rayapp/app/views/layouts/application.html.erb",
-		"/Users/raysango/Documents/rayapp/app/controllers/products_controller.rb",
-		"/Users/raysango/Documents/rayapp/app/models/product.rb",
+		"/Users/raysango/Documents/rayapp/Gemfile",
+		"/Users/raysango/Documents/rayapp/app/controllers/users_controller.rb",
 		"/Users/raysango/Documents/rayapp/app/controllers/application_controller.rb",
+		"/Users/raysango/Documents/rayapp/app/uploaders/avatar_uploader.rb",
+		"/Users/raysango/Documents/rayapp/app/views/layouts/application.html.erb",
+		"/Users/raysango/Documents/rayapp/app/models/user.rb",
 		"/Users/raysango/Documents/rayapp/app/policies/application_policy.rb",
 		"/Users/raysango/Documents/rayapp/app/policies/product_policy.rb",
+		"/Users/raysango/Documents/rayapp/app/controllers/products_controller.rb",
+		"/Users/raysango/Documents/rayapp/app/views/products/copy.html.erb",
 		"/Users/raysango/Documents/rayapp/app/views/products/_product.html.erb",
+		"/Users/raysango/Documents/rayapp/app/views/welcome/index.html.erb",
+		"/Users/raysango/Documents/rayapp/app/models/product.rb",
 		"/Users/raysango/Documents/rayapp/app/views/products/index.html.erb",
 		"/Users/raysango/Documents/rayapp/app/views/products/index_all.html.erb",
 		"/Users/raysango/Documents/rayapp/app/views/welcome/about.html.erb",
 		"/Users/raysango/Documents/rayapp/app/views/devise/registrations/edit.html.erb",
 		"/Users/raysango/Documents/rayapp/app/views/devise/registrations/new.html.erb",
-		"/Users/raysango/Documents/rayapp/app/controllers/users_controller.rb",
-		"/Users/raysango/Documents/rayapp/app/models/user.rb",
 		"/Users/raysango/Documents/rayapp/app/assets/stylesheets/animate.min.css",
 		"/Users/raysango/Documents/rayapp/config/initializers/assets.rb",
-		"/Users/raysango/Documents/rayapp/Gemfile",
 		"/Users/raysango/Documents/rayapp/config/initializers/setup_mail.rb",
 		"/Users/raysango/Documents/rayapp/app/uploaders/image_uploader.rb",
 		"/Users/raysango/Documents/rayapp/app/assets/stylesheets/application.scss",
@@ -145,7 +171,6 @@
 		"/Users/raysango/Documents/rayapp/config/routes.rb",
 		"/Users/raysango/Samsung/Ebay/20150616_185159.jpg",
 		"/Users/raysango/Documents/rayapp/config/initializers/fog.rb",
-		"/Users/raysango/Documents/rayapp/app/uploaders/avatar_uploader.rb",
 		"/Users/raysango/Documents/rayapp/config/initializers/carrierwave.rb",
 		"/Users/raysango/Documents/rayapp/config/application.yml",
 		"/Users/raysango/Documents/rayapp/config/application.example.yml",
@@ -154,7 +179,6 @@
 		"/Users/raysango/Documents/rayapp/app/views/products/new.html.erb",
 		"/Users/raysango/Documents/rayapp/app/helpers/application_helper.rb",
 		"/Users/raysango/Documents/rayapp/app/views/products/edit.html.erb",
-		"/Users/raysango/Documents/rayapp/app/views/products/copy.html.erb",
 		"/Users/raysango/Documents/rayapp/config/environments/development.rb",
 		"/Users/raysango/Documents/rayapp/config/environments/production.rb",
 		"/Users/raysango/Documents/rayapp/.gitignore",
@@ -279,8 +303,91 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/controllers/products_controller.rb",
+					"settings":
+					{
+						"buffer_size": 2023,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								800,
+								800
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 314.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/uploaders/image_uploader.rb",
+					"settings":
+					{
+						"buffer_size": 1864,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 1.0,
+						"translation.y": 485.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": ".gitignore",
+					"settings":
+					{
+						"buffer_size": 520,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								519,
+								519
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -344,6 +451,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 365.0,
+	"side_bar_width": 244.0,
 	"status_bar_visible": true
 }
