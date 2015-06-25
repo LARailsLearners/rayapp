@@ -35,14 +35,9 @@ respond_to :html, :js
   def copy
     @product_copy = Product.find(params[:id])
     @product = Product.new
-    authorize @product_copy
-    @product.name = @product_copy.name
-    @product.description = @product_copy.description
-    @product.price = @product_copy.price
-    @product.quantity = @product_copy.quantity
-    @product.upc_code = @product_copy.upc_code
-    @product.condition = @product_copy.condition
+    @product = @product_copy.dup
     @product.image = @product_copy.image
+    authorize @product
   end
 
   def create
@@ -91,6 +86,6 @@ respond_to :html, :js
   private
 
   def product_params
-  	params.require(:product).permit(:name, :description, :price, :user_id,:condition, :quantity, :upc_code, :image)
+  	params.require(:product).permit(:name, :description, :price, :user_id,:condition, :quantity, :upc_code, :image, :image_cache)
   end
 end
