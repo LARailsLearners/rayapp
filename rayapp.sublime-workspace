@@ -87,30 +87,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "app/controllers/products_controller.rb",
-			"settings":
-			{
-				"buffer_size": 2023,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/uploaders/image_uploader.rb",
-			"settings":
-			{
-				"buffer_size": 1864,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": ".gitignore",
-			"settings":
-			{
-				"buffer_size": 520,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -140,17 +116,19 @@
 	},
 	"file_history":
 	[
+		"/Users/raysango/Documents/rayapp/app/controllers/products_controller.rb",
+		"/Users/raysango/Documents/rayapp/app/uploaders/image_uploader.rb",
+		"/Users/raysango/Documents/rayapp/.gitignore",
+		"/Users/raysango/Documents/rayapp/app/controllers/application_controller.rb",
+		"/Users/raysango/Documents/rayapp/app/views/products/_product.html.erb",
 		"/Users/raysango/Documents/rayapp/Gemfile",
 		"/Users/raysango/Documents/rayapp/app/controllers/users_controller.rb",
-		"/Users/raysango/Documents/rayapp/app/controllers/application_controller.rb",
 		"/Users/raysango/Documents/rayapp/app/uploaders/avatar_uploader.rb",
 		"/Users/raysango/Documents/rayapp/app/views/layouts/application.html.erb",
 		"/Users/raysango/Documents/rayapp/app/models/user.rb",
 		"/Users/raysango/Documents/rayapp/app/policies/application_policy.rb",
 		"/Users/raysango/Documents/rayapp/app/policies/product_policy.rb",
-		"/Users/raysango/Documents/rayapp/app/controllers/products_controller.rb",
 		"/Users/raysango/Documents/rayapp/app/views/products/copy.html.erb",
-		"/Users/raysango/Documents/rayapp/app/views/products/_product.html.erb",
 		"/Users/raysango/Documents/rayapp/app/views/welcome/index.html.erb",
 		"/Users/raysango/Documents/rayapp/app/models/product.rb",
 		"/Users/raysango/Documents/rayapp/app/views/products/index.html.erb",
@@ -161,7 +139,6 @@
 		"/Users/raysango/Documents/rayapp/app/assets/stylesheets/animate.min.css",
 		"/Users/raysango/Documents/rayapp/config/initializers/assets.rb",
 		"/Users/raysango/Documents/rayapp/config/initializers/setup_mail.rb",
-		"/Users/raysango/Documents/rayapp/app/uploaders/image_uploader.rb",
 		"/Users/raysango/Documents/rayapp/app/assets/stylesheets/application.scss",
 		"/Users/raysango/Documents/rayapp/app/assets/stylesheets/welcome.scss",
 		"/Users/raysango/Documents/rayapp/app/assets/javascripts/test.js",
@@ -181,7 +158,6 @@
 		"/Users/raysango/Documents/rayapp/app/views/products/edit.html.erb",
 		"/Users/raysango/Documents/rayapp/config/environments/development.rb",
 		"/Users/raysango/Documents/rayapp/config/environments/production.rb",
-		"/Users/raysango/Documents/rayapp/.gitignore",
 		"/Users/raysango/Documents/rayapp/app/views/devise/sessions/new.html.erb",
 		"/Users/raysango/Documents/rayapp/db/migrate/20150530041654_devise_create_users.rb",
 		"/Users/raysango/Documents/rayapp/config/initializers/devise.rb",
@@ -303,91 +279,8 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "app/controllers/products_controller.rb",
-					"settings":
-					{
-						"buffer_size": 2023,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								800,
-								800
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 314.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/uploaders/image_uploader.rb",
-					"settings":
-					{
-						"buffer_size": 1864,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 1.0,
-						"translation.y": 485.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": ".gitignore",
-					"settings":
-					{
-						"buffer_size": 520,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								519,
-								519
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
