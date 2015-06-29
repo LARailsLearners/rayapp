@@ -13,6 +13,14 @@ class ApplicationController < ActionController::Base
      redirect_to root_url, alert: "#{a.first}"
    end
 
+   #This method is for activeadmin to only allow admin users to acces the admin page from the url
+def authenticate_admin_user!
+  raise SecurityError unless current_user.admin?
+end
+
+rescue_from SecurityError do |exception|
+  redirect_to root_url, alert: "You are not authorized to access this page"
+end
   protected
  
    def configure_permitted_parameters

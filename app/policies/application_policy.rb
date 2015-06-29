@@ -15,7 +15,12 @@ class ApplicationPolicy
   end
 
   def show?
-    scope.where(:id => record.id).exists?
+    case record.name
+    when "Dashboard"
+      true
+    else
+      scope.where(:id => record.id).exists?
+    end
   end
 
   def create?
