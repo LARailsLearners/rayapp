@@ -25,6 +25,9 @@ respond_to :html, :js
 
 
   def show
+    @product = Product.find(params[:id])
+    @user= User.find(@product.user_id)
+    @list_price = @product.price + 10
   end
 
   def new

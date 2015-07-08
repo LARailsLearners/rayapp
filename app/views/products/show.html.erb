@@ -1,2 +1,18 @@
-<h1>Products#show</h1>
-<p>Find me in app/views/products/show.html.erb</p>
+
+<div class="image">
+	<%= image_tag(@product.image.profile.url)%>
+</div>
+
+<div class="row" style="width:50%; float:right"> 
+	<h1><%= @product.name %></h1>
+	<small>by: <%= @user.first_name%></small>
+	<h3>List Price: <del> $<%= @list_price %></h3>
+	<h3 style="color: red">Sale Price: $<%= @product.price %></h3>
+
+	<h2>Details:</h2>
+
+	<div class="col-md-4">
+		<p><%= @product.description %></p>
+	</div>
+
+</div>

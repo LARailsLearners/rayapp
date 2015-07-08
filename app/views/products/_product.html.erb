@@ -1,8 +1,7 @@
             <tr>
         			<td> <%= @count += 1 %></td>
               <td><%= image_tag(product.image.tiny.url)%></td>
-        			<td> <%= product.name %> </td>
-        			<td> <%= product.description %> </td>
+        			<td> <%= link_to product.name, product_path(product) %> </td>
               <td> <%= product.condition %> </td>
               <td> <%= product.quantity %> </td>
               <td> <%= product.upc_code %> </td>
