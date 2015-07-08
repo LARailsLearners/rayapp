@@ -8,7 +8,8 @@ class ApplicationController < ActionController::Base
 
   rescue_from Pundit::NotAuthorizedError do |exception|
     a=[]
-    a = exception.message.split(" ").map(&:capitalize).join(" ").split("?")
+    #title case to capitalize every word
+    a = exception.message.split("?").map(&:titlecase)
      # redirect_to root_url, alert: exception.message
      redirect_to root_url, alert: "#{a.first}"
    end
