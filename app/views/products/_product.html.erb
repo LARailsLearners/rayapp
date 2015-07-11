@@ -1,10 +1,11 @@
             <tr>
         			<td> <%= @count += 1 %></td>
               <td><%= image_tag(product.image.tiny.url)%></td>
-        			<td> <%= link_to product.name, product_path(product) %> </td>
+        			<td> <%= link_to (markdown_to_html product.name), product_path(product) %> </td>
               <td> <%= product.condition %> </td>
               <td> <%= product.quantity %> </td>
               <td> <%= product.upc_code %> </td>
+              <td><%= product.user.email %></td>
         			<td> <%= product.price %> </td>
         			<td>
       				  <div class="dropdown">
