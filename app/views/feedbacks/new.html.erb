@@ -1,0 +1,37 @@
+
+<h1>Leave feedback</h1>
+<p>Share honest Feedback to help members buy and sell with confidence. Give sellers detailed ratings to let them know where they're doing a great job, and where there's still room for improvement</p>
+<small><strong>Leave feedback for:</strong></small>
+
+<h1><%= @product.name %></h1>
+<div class="product-image" style="float: left; padding: 20px;display: -webkit-inline-box;width: 100%;">
+	<%= image_tag(@product.image.tiny.url)%>  
+	<small style="padding: 10px;">
+		<p>Seller: <%= @user.first_name %> (<span class="glyphicon glyphicon-plus-sign" style="color: green"></span><%= @user.feedbacks.where(positive: true).count %> <span class="glyphicon glyphicon-minus-sign" style="color: red" ></span><%= @user.feedbacks.where(positive: false).count %>) Ratings</p>
+		<p>Item Condition: <%= @product.condition.capitalize %></p>
+	</small>
+</div>
+<div class="h_line" style="margin-top:150px"></div>
+<div class="rating-1" style="display: block">
+	
+	<p><strong>Rate this Item</strong></p>
+
+</div>
+
+<%= form_for [@product, @feedback] do |f| %>
+<div>
+	<%= f.radio_button :positive, true, class:"rdnbtn" %>
+    <%= f.label :Positive %>
+    <%= f.radio_button :positive, false, class:"rdnbtn", style:"margin-left: 15px; padding: 10px" %>
+    <%= f.label :Negative %><br><br>
+
+    <div class="col-md-4" style="margin-left:-10px">
+    	<%= f.text_area :body, rows: 1, class: 'form-control', placeholder: "Enter Feedback" %>
+    </div> 
+
+    	<%= f.submit "Leave Feedback", class: 'btn btn-success', style:"margin-left: 15px" %><br><br>
+
+    <br><br>
+ </div>
+<%end%>
+

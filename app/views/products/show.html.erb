@@ -8,13 +8,37 @@
 		<div class="row" style="width:60%; float:right"> 
 			<h1><%= markdown_to_html @product.name %></h1>
 			<small>by: <%= @user.first_name%></small>
-			<% if policy(@product).update? %> <%= link_to "Edit", edit_product_path(@product), class: 'btn btn-success'%><%end%> 
-			<% if policy(@product).destroy? %> <%= link_to "Delete", @product, class: 'btn btn-danger', method: :delete, data: {confirm: "Are you sure you want to delete this Product?"}%><%end%>
-			
+			<% if policy(@product).update? %>
+				<%= link_to "Edit", edit_product_path(@product), class: 'btn btn-success'%>
+			<%end%> 
+			<% if policy(@product).destroy? %>
+			<%= link_to "Delete", @product, class: 'btn btn-danger', method: :delete, data: {confirm: "Are you sure you want to delete this Product?"}%>
+			<%end%>
+			<% if policy(@feedback).create? %>
+				<% unless (@product.user.id == current_user.id) || (@product.feedbacks.pluck("buyer").include? current_user.id) %>
+					<%= link_to "Leave Feedback", new_product_feedback_path(@product,@feedback), class: 'btn btn-warning'%>
+					<%end%>
+			<%end%>
 			<h3>List Price: <del> $<%= @list_price %></h3>
 			<h3 style="color: red">Sale Price: $<%= @product.price %></h3>
 			<h2>Details:</h2>
 			<p><%= markdown_to_html @product.description %></p>
 		</div>
 	</li>
+	<% if @feedbacks !=[]%>
+		<li style="display:inline">
+			<div class="row" style="width:60%; float:right">
+				<h1>Reviews</h1>	
+				<% @feedbacks.each do |feedback| %>
+					<ul style="list-style:none">
+						<li><% if feedback.positive %><span class="glyphicon glyphicon-plus-sign" style="color: green"></span> <%= feedback.body%> | <%= User.find(feedback.buyer).first_name %></li>
+						<%else%>
+						<li><span class="glyphicon glyphicon-minus-sign" style="color: red" ></span> <%= feedback.body%> | <%= User.find(feedback.buyer).first_name %></li>
+						<%end%>
+					</ul>
+					<br>
+				<%end%>
+			</div>
+		</li>
+	<%end%>
 </ul>

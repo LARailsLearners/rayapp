@@ -58,6 +58,7 @@ GEM
       debug_inspector (>= 0.0.1)
     bootstrap-sass (3.2.0.2)
       sass (~> 3.2)
+    bootstrap_form (2.3.0)
     bourbon (4.2.3)
       sass (~> 3.4)
       thor
@@ -332,6 +333,7 @@ PLATFORMS
 DEPENDENCIES
   activeadmin (~> 1.0.0.pre1)
   bootstrap-sass (= 3.2.0.2)
+  bootstrap_form
   byebug
   carrierwave
   coffee-rails (~> 4.1.0)

@@ -26,8 +26,10 @@ respond_to :html, :js
 
   def show
     @product = Product.find(params[:id])
+    @feedbacks = Feedback.where(product_id: @product.id)
     @user= User.find(@product.user_id)
     @list_price = @product.price + 10
+    @feedback = @product.feedbacks.new
   end
 
   def new

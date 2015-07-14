@@ -1,5 +1,6 @@
 class Product < ActiveRecord::Base
   belongs_to :user
+  has_many :feedbacks
   # validates :user, presence: true
   validates :name, length: {minimum: 5}, presence: true
   validates :description, presence: true

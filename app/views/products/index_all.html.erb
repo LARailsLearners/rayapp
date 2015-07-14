@@ -10,7 +10,9 @@
         <th>UPC</th>
         <th>Seller</th>
     		<th>Price</th>
+            <% if current_user %>
     		<th>Action</th>
+            <%end%>
     	</tr>
     		<%= render partial: "product", collection: @products_all%>
 	</table>

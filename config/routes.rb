@@ -1,11 +1,14 @@
 Rails.application.routes.draw do
 
 
+  
+
   ActiveAdmin.routes(self)
   	devise_for :users
 	resources :users, only: [:update, :show, :index]
 
 	resources :products do
+		resources :feedbacks
 
 		member do
 			get'copy'
