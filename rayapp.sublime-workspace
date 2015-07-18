@@ -4,12 +4,16 @@
 		"selected_items":
 		[
 			[
-				"feed",
-				"feedback"
+				"pro",
+				"product"
 			],
 			[
-				"pro",
-				"products"
+				"col",
+				"column"
+			],
+			[
+				"feed",
+				"feedback"
 			],
 			[
 				"add",
@@ -92,42 +96,26 @@
 	"buffers":
 	[
 		{
-			"file": "app/views/feedbacks/new.html.erb",
+			"file": "app/models/user.rb",
 			"settings":
 			{
-				"buffer_size": 1361,
+				"buffer_size": 449,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/policies/feedback_policy.rb",
+			"file": "app/policies/application_policy.rb",
 			"settings":
 			{
-				"buffer_size": 46,
+				"buffer_size": 681,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/layouts/application.html.erb",
+			"file": "app/policies/dashboard_policy.rb",
 			"settings":
 			{
-				"buffer_size": 2507,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/assets/stylesheets/application.scss",
-			"settings":
-			{
-				"buffer_size": 899,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/products/show.html.erb",
-			"settings":
-			{
-				"buffer_size": 1435,
+				"buffer_size": 47,
 				"line_ending": "Unix"
 			}
 		},
@@ -135,15 +123,23 @@
 			"file": "app/controllers/products_controller.rb",
 			"settings":
 			{
-				"buffer_size": 2237,
+				"buffer_size": 2379,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/controllers/feedbacks_controller.rb",
+			"file": "app/controllers/application_controller.rb",
 			"settings":
 			{
-				"buffer_size": 786,
+				"buffer_size": 1441,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/initializers/active_admin.rb",
+			"settings":
+			{
+				"buffer_size": 7642,
 				"line_ending": "Unix"
 			}
 		}
@@ -176,23 +172,33 @@
 	},
 	"file_history":
 	[
-		"/Users/raysango/Documents/rayapp/app/models/product.rb",
-		"/Users/raysango/Documents/rayapp/app/models/user.rb",
-		"/Users/raysango/Documents/rayapp/app/policies/application_policy.rb",
-		"/Users/raysango/Documents/rayapp/app/views/products/index.html.erb",
-		"/Users/raysango/Documents/rayapp/app/views/products/index_all.html.erb",
+		"/Users/raysango/Documents/rayapp/app/policies/page_policy.rb",
+		"/Users/raysango/Documents/rayapp/app/views/products/show.html.erb",
+		"/Users/raysango/Documents/rayapp/app/admin/user.rb",
+		"/Users/raysango/Documents/rayapp/app/admin/product.rb",
 		"/Users/raysango/Documents/rayapp/config/routes.rb",
+		"/Users/raysango/Documents/rayapp/app/admin/dashboard.rb",
+		"/Users/raysango/Documents/rayapp/app/models/feedback.rb",
+		"/Users/raysango/Documents/rayapp/config/initializers/active_admin.rb",
 		"/Users/raysango/Documents/rayapp/app/controllers/feedbacks_controller.rb",
+		"/Users/raysango/Documents/rayapp/app/models/product.rb",
+		"/Users/raysango/Documents/rayapp/app/policies/application_policy.rb",
+		"/Users/raysango/Documents/rayapp/app/policies/feedback_policy.rb",
 		"/Users/raysango/Documents/rayapp/app/controllers/products_controller.rb",
+		"/Users/raysango/Documents/rayapp/app/assets/stylesheets/active_admin.css.scss",
+		"/Users/raysango/Documents/rayapp/app/inputs/inet_input.rb",
+		"/Users/raysango/Documents/rayapp/app/admin/feedback.rb",
+		"/Users/raysango/Documents/rayapp/app/views/feedbacks/show.html.erb",
+		"/Users/raysango/Documents/rayapp/app/views/layouts/application.html.erb",
 		"/Users/raysango/Documents/rayapp/app/views/feedbacks/new.html.erb",
 		"/Users/raysango/Documents/rayapp/app/assets/stylesheets/application.scss",
+		"/Users/raysango/Documents/rayapp/app/models/user.rb",
+		"/Users/raysango/Documents/rayapp/app/views/products/index.html.erb",
+		"/Users/raysango/Documents/rayapp/app/views/products/index_all.html.erb",
 		"/Users/raysango/Documents/rayapp/app/assets/javascripts/application.js",
-		"/Users/raysango/Documents/rayapp/app/models/feedback.rb",
 		"/Users/raysango/Documents/rayapp/Gemfile",
-		"/Users/raysango/Documents/rayapp/app/views/layouts/application.html.erb",
 		"/Users/raysango/Documents/rayapp/app/views/products/_product.html.erb",
 		"/Users/raysango/Documents/rayapp/app/helpers/application_helper.rb",
-		"/Users/raysango/Documents/rayapp/app/views/products/show.html.erb",
 		"/Users/raysango/Documents/rayapp/spec/controllers/products_controller_spec.rb",
 		"/Users/raysango/Documents/rayapp/app/views/products/_form.html.erb",
 		"/Users/raysango/Documents/rayapp/app/controllers/application_controller.rb",
@@ -200,14 +206,8 @@
 		"/Users/raysango/Documents/rayapp/.gitignore",
 		"/Users/raysango/Documents/rayapp/app/policies/dashboard_policy.rb",
 		"/Users/raysango/Documents/rayapp/app/policies/product_policy.rb",
-		"/Users/raysango/Documents/rayapp/config/initializers/active_admin.rb",
-		"/Users/raysango/Documents/rayapp/app/admin/product.rb",
 		"/Users/raysango/Documents/rayapp/app/policies/active_admin/page_policy.rb",
-		"/Users/raysango/Documents/rayapp/app/admin/dashboard.rb",
 		"/Users/raysango/Documents/rayapp/app/policies/active_admin/product_policy.rb",
-		"/Users/raysango/Documents/rayapp/app/policies/page_policy.rb",
-		"/Users/raysango/Documents/rayapp/app/admin/user.rb",
-		"/Users/raysango/Documents/rayapp/app/inputs/inet_input.rb",
 		"/Users/raysango/Documents/rayapp/app/controllers/users_controller.rb",
 		"/Users/raysango/Documents/rayapp/app/policies/user_policy.rb",
 		"/Users/raysango/Documents/rayapp/app/policies/active_admin/comment_policy.rb",
@@ -358,28 +358,30 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/views/feedbacks/new.html.erb",
+					"file": "app/models/user.rb",
 					"settings":
 					{
-						"buffer_size": 1361,
+						"buffer_size": 449,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								536,
-								536
+								365,
+								365
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -389,18 +391,46 @@
 				},
 				{
 					"buffer": 1,
-					"file": "app/policies/feedback_policy.rb",
+					"file": "app/policies/application_policy.rb",
 					"settings":
 					{
-						"buffer_size": 46,
+						"buffer_size": 681,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								40,
-								40
+								662,
+								662
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 394.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/policies/dashboard_policy.rb",
+					"settings":
+					{
+						"buffer_size": 47,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								47,
+								47
 							]
 						],
 						"settings":
@@ -414,56 +444,28 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "app/views/layouts/application.html.erb",
-					"settings":
-					{
-						"buffer_size": 2507,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								291,
-								291
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
 					"buffer": 3,
-					"file": "app/assets/stylesheets/application.scss",
+					"file": "app/controllers/products_controller.rb",
 					"settings":
 					{
-						"buffer_size": 899,
+						"buffer_size": 2379,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								382,
-								382
+								864,
+								956
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 0.0,
+						"translation.x": 5.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
@@ -471,45 +473,46 @@
 				},
 				{
 					"buffer": 4,
-					"file": "app/views/products/show.html.erb",
+					"file": "app/controllers/application_controller.rb",
 					"settings":
 					{
-						"buffer_size": 1435,
+						"buffer_size": 1441,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1361,
-								1361
+								1367,
+								1367
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 34.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 5,
-					"file": "app/controllers/products_controller.rb",
+					"file": "config/initializers/active_admin.rb",
 					"settings":
 					{
-						"buffer_size": 2237,
+						"buffer_size": 7642,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								698,
-								698
+								2436,
+								2436
 							]
 						],
 						"settings":
@@ -519,35 +522,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/controllers/feedbacks_controller.rb",
-					"settings":
-					{
-						"buffer_size": 786,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								225,
-								268
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 835.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -586,6 +561,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
 	"replace":
 	{
 		"height": 0.0

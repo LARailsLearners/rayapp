@@ -1,4 +1,7 @@
 class Product < ActiveRecord::Base
+
+  scope :no_image,-> {where(:image => nil)}
+  # scope :All, -> {}
   belongs_to :user
   has_many :feedbacks
   # validates :user, presence: true

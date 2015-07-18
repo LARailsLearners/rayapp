@@ -30,6 +30,9 @@ respond_to :html, :js
     @user= User.find(@product.user_id)
     @list_price = @product.price + 10
     @feedback = @product.feedbacks.new
+    # rescue ActiveRecord::RecordNotFound
+    # flash[:error] = "The product reuested can not be found"
+    # redirect_to :action => 'index' 
   end
 
   def new

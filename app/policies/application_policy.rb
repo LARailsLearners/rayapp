@@ -15,12 +15,7 @@ class ApplicationPolicy
   end
 
   def show?
-    case record.name
-    when "Dashboard"
-      true
-    else
-      scope.where(:id => record.id).exists?
-    end
+    true
   end
 
   def create?
@@ -48,7 +43,7 @@ class ApplicationPolicy
   end
 
   def scope
-    record.class
+    Pundit.policy_scope!(user, record.class)
   end
 
   class Scope
