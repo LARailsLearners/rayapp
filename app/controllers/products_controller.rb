@@ -94,6 +94,6 @@ respond_to :html, :js
   private
 
   def product_params
-  	params.require(:product).permit(:name, :description, :price, :user_id,:condition, :quantity, :upc_code, :image, :image_cache)
+  	params.require(:product).permit(:name, :description, :price, :user_id,:condition, :quantity, :upc_code, :image, :image_cache, :bootsy_image_gallery_id)
   end
 end

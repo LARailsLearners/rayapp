@@ -1,4 +1,5 @@
 class Product < ActiveRecord::Base
+  include Bootsy::Container
 
   scope :no_image,-> {where(:image => nil)}
   # scope :All, -> {}

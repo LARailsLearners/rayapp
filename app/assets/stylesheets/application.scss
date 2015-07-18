@@ -1,4 +1,5 @@
 @import "bootstrap-sprockets";
+@import "bootsy";
 @import "bootstrap";
 
 
@@ -34,7 +35,7 @@ body {
 }
 .container {
 	background-color: #FFF;
-	opacity: 0.9;
+	/*opacity: 0.9;*/
 
 }
 .image {

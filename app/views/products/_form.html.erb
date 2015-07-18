@@ -17,7 +17,7 @@
 
 	<%= form_group_tag(@product.errors[:description]) do %>
 		<%= f.label :Description %>
-		<%= f.text_area :description, class: 'form-control', placeholder: "Enter Product Description"%>
+		<%= f.bootsy_area :description,rows: 8, class: 'form-control', placeholder: "Enter Product Description", editor_options: {alert_unsaved: false}%>
 	<%end%>
 
 	<% if @product.image? %>

@@ -7,6 +7,7 @@ gem 'rails', '4.2.1'
 gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+gem 'sprockets-rails', :require => 'sprockets/railtie'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -18,7 +19,7 @@ gem 'devise'
 #User Authorization
 gem 'pundit'
 ##Bootstrap
-gem 'bootstrap-sass','3.2.0.2'
+gem 'bootstrap-sass', '~> 3.3.5'
 ##Hide critical data
 gem 'figaro', '1.0'
 ##Uploading Images
@@ -34,6 +35,8 @@ end
 #Markdown
 gem 'redcarpet'
 gem 'bootstrap_form'
+#Markdown Editor
+gem 'bootsy'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks

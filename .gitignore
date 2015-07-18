@@ -15,5 +15,4 @@
 # Ignore application configuration
 /config/application.yml
 /config/secrets.yml
-/public/uploads/tmp
-/public/uploads/user
+/public/uploads
