@@ -1,11 +1,11 @@
-<ul>
-	<li style="display:inline">
+<ul style="list-style-type: none">
+	<li>
 		<div class="image">
 			<%= image_tag(@product.image.profile.url)%>
 		</div>
 	</li>
-	<li style="display:inline">
-		<div class="row" style="width:60%; float:right"> 
+	<li>
+		<div class="row" style="margin-left: 500px"> 
 			<h1><%= markdown_to_html @product.name %></h1>
 			<small>by: <%= @user.first_name%></small>
 			<% if policy(@product).update? %>
@@ -27,7 +27,7 @@
 	</li>
 	<% if @feedbacks !=[]%>
 		<li style="display:inline">
-			<div class="row" style="width:60%; float:right">
+			<div class="row" style="margin-left: 500px">
 				<h1>Reviews</h1>	
 				<% @feedbacks.each do |feedback| %>
 					<ul style="list-style:none">
