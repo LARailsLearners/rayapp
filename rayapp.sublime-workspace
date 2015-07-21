@@ -158,6 +158,14 @@
 				"buffer_size": 1722,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "config/initializers/bootsy.rb",
+			"settings":
+			{
+				"buffer_size": 1956,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -376,6 +384,7 @@
 	"groups":
 	[
 		{
+			"selected": 8,
 			"sheets":
 			[
 				{
@@ -586,6 +595,34 @@
 						{
 							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
 							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "config/initializers/bootsy.rb",
+					"settings":
+					{
+						"buffer_size": 1956,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1617,
+								1617
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
