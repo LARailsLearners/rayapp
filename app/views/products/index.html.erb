@@ -1,5 +1,15 @@
+<div class="search" style="float:right" >
+    <%= form_tag products_path, method: :get do %>
+  <p>
+    <%= text_field_tag :query, params[:query], autocomplete: "off", placeholder: "Search Your Products" %>
+    <%= submit_tag "Search", name: nil, class: "btn btn-success" %>
+  </p>
+<% end %>
+</div>
+	
+    <h1>Manage Inventory <% if policy(Product.new).create? %> <%= link_to "Add Item", new_product_path, class: 'btn btn-success'%><%end%></h1>
 
-	<h1>Manage Inventory <% if policy(Product.new).create? %> <%= link_to "Add Item", new_product_path, class: 'btn btn-success'%><%end%></h1>
+    
 <br>
     <table class="table table-hover">
       <tr>

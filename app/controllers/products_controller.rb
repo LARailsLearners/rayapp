@@ -3,10 +3,13 @@ class ProductsController < ApplicationController
 respond_to :html, :js
 
   def index
+    @count= 0
     if current_user
-  	@products = current_user.products
-    authorize @products
-  	@count= 0
+      if params[:query].present?
+        @products = current_user.products.search(params[:query])
+      else
+        @products = current_user.products
+      end
   else
     redirect_to root_url, alert: "You are not authorized to perform this action."
     end

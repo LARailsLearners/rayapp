@@ -20,7 +20,7 @@
       <li><%= link_to "Inventory", products_path %></li> 
       <li><%= form_tag(products_all_path, :method => "get", class: "navbar-form", id: "search-form") do %>
     
-      <%= text_field_tag :search, params[:search], class: "span2", placeholder: "Search Products" %>
+      <%= text_field_tag :search, params[:search],autocomplete: "off", class: "span2", placeholder: "Search All Products" %>
       <!-- In order to have the "search" icon int the button, we need to use plain HTML instead 
            of using a Rails form helper -->
       <button class="bt btn-success"  type="submit">search</button></li>

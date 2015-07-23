@@ -26,6 +26,9 @@ gem 'figaro', '1.0'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'fog'
+#Elasticsearch
+gem 'elasticsearch'
+gem 'elasticsearch-model'
 #Admin Framework
 gem 'activeadmin', '~> 1.0.0.pre1'
 #Testing Framework
