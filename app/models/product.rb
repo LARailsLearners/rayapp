@@ -19,6 +19,6 @@ class Product < ActiveRecord::Base
   # It returns the products whose names contain one or more words form the query
   def self.search(query)
     # where(:title, query) -> This would return an exact match of the query
-    Product.where("LOWER(name) like ? OR LOWER(description) like?", "%#{query}%", "%#{query}%") 
+    Product.where("LOWER(name) like ? OR LOWER(description) like?", "%#{query.downcase}%", "%#{query.downcase}%") 
   end
 end
