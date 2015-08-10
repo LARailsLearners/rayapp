@@ -16,7 +16,8 @@ class ApplicationController < ActionController::Base
 
   #This method is for activeadmin to only allow admin users to acces the admin page from the url
   def authenticate_admin_user!
-    raise SecurityError unless current_user && current_user.admin?
+    authenticate_user!
+    raise SecurityError unless current_user.admin?
   end
   # Show action authorization: rescue when record does not exists
   rescue_from ActiveRecord::RecordNotFound, :with => :record_not_found
