@@ -15,4 +15,5 @@
 //= require bootstrap-sprockets
 //= require bootsy
 //= require turbolinks
+//= require slide
 //= require_tree .

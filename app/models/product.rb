@@ -1,6 +1,6 @@
 class Product < ActiveRecord::Base
-  include Elasticsearch::Model
-  include Elasticsearch::Model::Callbacks
+  # include Elasticsearch::Model
+  # include Elasticsearch::Model::Callbacks
   include Bootsy::Container
 
   scope :no_image,-> {where(:image => nil)}

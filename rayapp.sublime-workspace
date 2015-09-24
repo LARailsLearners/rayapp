@@ -115,7 +115,7 @@
 			"file": "app/models/product.rb",
 			"settings":
 			{
-				"buffer_size": 968,
+				"buffer_size": 1028,
 				"line_ending": "Unix"
 			}
 		},
@@ -376,7 +376,7 @@
 	"groups":
 	[
 		{
-			"selected": 7,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -428,7 +428,7 @@
 							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 230.0,
+						"translation.y": 40.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -438,15 +438,15 @@
 					"file": "app/models/product.rb",
 					"settings":
 					{
-						"buffer_size": 968,
+						"buffer_size": 1028,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								245,
-								264
+								34,
+								34
 							]
 						],
 						"settings":
